@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="upi-payment-service" />
         <module name="payment-core" />
         <module name="payment-user-service" />
       </profile>
@@ -16,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="payment-core" options="-parameters" />
       <module name="payment-user-service" options="-parameters" />
+      <module name="upi-payment-service" options="-parameters" />
     </option>
   </component>
 </project>
