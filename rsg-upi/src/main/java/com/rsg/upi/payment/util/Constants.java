@@ -10,5 +10,7 @@ public class Constants {
 
     public static final String KAFKA_TOPIC_PAYMENT_STATUS="upi-payment-status";
 
+    public static final String KAFKA_TOPIC_PAYMENT="upi-payments";
+
     public static final String INVALID_TRANSACTIONID = "Invalid TransactionId";
 }

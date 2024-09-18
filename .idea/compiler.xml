@@ -8,13 +8,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="upi-payment-service" />
-        <module name="payment-core" />
+        <module name="notification" />
         <module name="payment-user-service" />
+        <module name="payment-core" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="notification" options="-parameters" />
       <module name="payment-core" options="-parameters" />
       <module name="payment-user-service" options="-parameters" />
       <module name="upi-payment-service" options="-parameters" />

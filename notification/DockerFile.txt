@@ -1,0 +1,14 @@
+# Start with the official OpenJDK image
+FROM openjdk:17-jdk-slim
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the jar file to the container
+COPY target/notification.jar /app/notification.jar
+
+# Expose the application port
+EXPOSE 8083
+
+# Set the entry point to run the jar
+ENTRYPOINT ["java", "-jar", "/app/notification.jar"]
